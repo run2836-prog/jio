@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>250x250 Demo Ad</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+        }
+        
+        .ad-container {
+            width: 250px;
+            height: 250px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        
+        .ad-container:hover {
+            transform: scale(1.05);
+        }
+        
+        .ad-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            z-index: 2;
+        }
+        
+        .ad-subtitle {
+            font-size: 16px;
+            margin-bottom: 20px;
+            z-index: 2;
+        }
+        
+        .ad-button {
+            background: white;
+            color: #667eea;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: bold;
+            text-decoration: none;
+            z-index: 2;
+            transition: background 0.3s ease;
+        }
+        
+        .ad-button:hover {
+            background: #f0f0f0;
+        }
+        
+        .demo-tag {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            background: rgba(255,255,255,0.3);
+            padding: 3px 8px;
+            border-radius: 3px;
+            font-size: 10px;
+            color: white;
+            z-index: 3;
+        }
+        
+        .circle {
+            position: absolute;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            z-index: 1;
+        }
+        
+        .circle1 {
+            width: 150px;
+            height: 150px;
+            top: -50px;
+            left: -50px;
+        }
+        
+        .circle2 {
+            width: 200px;
+            height: 200px;
+            bottom: -80px;
+            right: -80px;
+        }
+    </style>
+</head>
+<body>
+    <div class="ad-container" onclick="alert('यह एक डेमो एड है!')">
+        <div class="demo-tag">डेमो एड</div>
+        <div class="circle circle1"></div>
+        <div class="circle circle2"></div>
+        <div class="ad-title">स्पेशल ऑफर!</div>
+        <div class="ad-subtitle">50% तक की छूट</div>
+        <a href="#" class="ad-button" onclick="return false;">अभी खरीदें</a>
+    </div>
+</body>
+</html>
